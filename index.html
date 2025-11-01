@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="icon" type="image/x=icon" href="GC LOGO.png">
+	<title>Me in 10 years from now</title>
+</head>
+<body>
+
+	<style>
+		@font-face {
+  		font-family: 'Spdz.ttf';		
+  		src: url('Spdz.ttf') format('truetype');
+		}
+		@font-face {
+  		font-family: 'Mario.ttf';
+  		src: url('Mario.ttf') format('truetype');
+		}
+		@font-face {
+  		font-family: 'SUP F.ttf';
+  		src: url('SUP F.ttf') format('truetype')
+		}
+		@font-face {
+  	font-family: 'burton.ttf';
+  	src: url('burton.ttf') format('truetype');
+		}
+		@font-face {
+  	font-family: 'pixe.ttf';
+  	src: url('pixe.ttf') format('truetype');
+		}
+		@import url("https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B");
+	#bg-video {
+  	position: fixed;
+  	right: 0;
+  	bottom: 0;
+  	min-width: 100%;
+  	min-height: 100%;
+  	z-index: -1;
+  	object-fit: cover;
+}
+
+@media (min-aspect-ratio:16/9){
+	#bg-video{
+		width: 100%;
+		height: auto;
+	}
+}
+@media (max-aspect-ratio:16/9){
+	#bg-video{
+		width: auto;
+		height: 100%;
+	}
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+		
+		span {
+			font-family: 'Spdz.ttf', monospace;
+		}
+		span:hover name{
+			color:red;
+		}
+		
+		h2 {
+			 font-family: 'SUP F.ttf', monospace;
+			 color: #fa78d6;
+		}
+
+		.des {
+			font-size: 50px;
+			color: #eb1365;
+			border-radius: 15px;
+			font-family: 'pixe.ttf', monospace;
+		}
+		
+    .intro {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      border-radius: 20px;
+      width: 70%;
+      margin: auto;
+      text-align: center;
+
+    }
+    .intro a{
+    	text-decoration: none;
+    }
+    .imahe {
+    	border-radius: 25px;
+    	border: 5px solid red;
+    }
+    .first{
+    	color: red;
+    	font-family: 'Mario.ttf', monospace;
+    }
+	.icons a{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 2rem;
+	height: 2rem;
+	background-color: transparent;
+	font-size: 2rem;
+	border-radius: 50%;
+	margin: 2rem 1.5rem 2rem 0;
+	transition: 0.3s ease;
+	color: #eb1365;
+	text-decoration: none;
+	}
+
+	.icons a:hover{
+		color: #95c2fb;
+		transform: scale(1.2);
+	}
+	.container {
+		display: flex;
+	}
+	.card {
+		width: 270px;
+		height: 300px;
+		background: grey;
+		border-radius: 12px;
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 18px;
+		font-weight: bold;
+		color: black;
+		position: relative;
+		transition: 0.3s;
+		left: 0;
+	}
+	.card:not(:first-child) {
+		margin-left: -50px;
+	}
+	.card:hover {
+		transform: traslateY(-20px);
+	}
+	.card:hover ~ .card {
+		left: 50px;
+	}
+	.size {
+		width: 260px;
+		height: 290px;
+		border-radius: 12px;
+	}
+	.info {
+		position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  color: #95c2fb;
+  text-align: center;
+  padding: 15px;
+  transition: opacity 0.4s ease;
+	}
+	.info p{
+		color: black;
+		font-family: 'burton.ttf', monospace;
+		font-size: 20px;
+	}
+	.info:hover{
+		opacity: 1;
+	}
+	.card:hover img{
+  opacity: 0.4;
+	}
+	.card:hover{
+		transform: translateY(-5px);
+  	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+	}
+	.card a{
+		background-color: transparent;
+		display: inline-flex;
+		text-decoration: none;
+	}
+	.back-video{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+	}
+
+	</style>
+	<video autoplay muted loop id="bg-video">
+  	<source src="BG.mp4" type="video/mp4">
+	</video>
+
+	<div class="intro">
+
+		<h1>My Name is <span class="name"><a href="https://www.facebook.com/share/1BoMUgPWCn/" title="My Facebook Account" target="_blank">"JOHN CHRISTOPHER DELA CRUZ"</a></span></h1>
+		<p class="des">
+			Hello I am Christopher Dela Cruz that
+		  are currently studying in Gordon College 
+			as a BSIT-1D Student.</p> 
+
+		<img  class="imahe" src="New pic.png" alt="Picture ko">
+
+		<div class="icons">
+			<a href="https://www.tiktok.com/@cryyystprr?_t=ZS-90d8Wn2HAh8&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+			<a href="https://github.com/JOHN-TOPHER" target="_blank"><i class="fa-brands fa-github"></i></a>
+			<a href="https://spotify.link/eBDyXQ4OxXb" target="_blank"><i  class="fa-brands fa-spotify"></i></a>
+			<a href="https://www.instagram.com/crystpr7?igsh=MWczbzA3MGlqODl5Ng==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+			<a href="https://www.facebook.com/share/1Cu9sRMkfj/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+		</div>
+
+		<hr>
+	<div class="Mywant">
+		<h1 class="first">And I see  my self after 10 years from now:</h1>
+
+		<div class="container">
+			<div class="card">
+				<a href="https://www.youtube.com/watch?v=O7VmwkrhqiY" title="" target="_blank">
+				<img  class="size" src="Techni.jpg">
+				<div class="info">
+          <p>I see my self as a Professional Technician</p>
+        </a>
+        </div>
+			</div>
+			<div class="card">
+				<a href="https://www.youtube.com/watch?v=5tCsefjyqrg" title="" target="_blank">
+				<img  class="size" src="Life.jpg">
+				<div class="info">
+          <p>I see my self have a Healthy Life</p>
+        </a>
+        </div>
+			</div>
+			<div class="card">
+				<a href="https://www.youtube.com/watch?v=fqtnx8q9tlg" title="" target="_blank">
+				<img  class="size" src="Travel.jpg">
+				<div class="info">
+          <p>I see my self that can travel anywhere I want</p>
+        </a>
+        </div>
+			</div>
+			<div class="card">
+				<a href="https://www.youtube.com/watch?v=_Z-oh_dI15w" title="" target="_blank">
+				<img  class="size" src="financially-stable.jpg">
+				<div class="info">
+          <p>I see my self has a Financially Stable Life</p>
+        </a>
+        </div>
+			</div>
+			
+	</div>
+	</div>
+	</div>
+
+</body>
+</html>
